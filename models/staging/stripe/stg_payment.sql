@@ -3,7 +3,7 @@ with payments as (
     orderid,
     status,
     amount/100 as amount
-    FROM stripe.payment
+    FROM {{ source('stripe','payment') }}
 )
 
 select * from payments
