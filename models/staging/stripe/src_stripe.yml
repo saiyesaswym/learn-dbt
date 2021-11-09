@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: sai_test
+    tables:
+      - name: payment
+        description: Raw payments table
